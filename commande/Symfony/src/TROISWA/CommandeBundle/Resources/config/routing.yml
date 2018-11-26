@@ -1,0 +1,9 @@
+troiswa_commande_homepage:
+    path:     /home
+    defaults: { _controller: TROISWACommandeBundle:Commande:index }
+
+troiswa_commande_recap:
+    path:     /recap/{id}
+    defaults: { _controller: TROISWACommandeBundle:Commande:recap }
+    requirements:
+        id: \d+

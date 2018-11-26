@@ -1,0 +1,3 @@
+services:
+    troiswa_commande.sql:
+        class: TROISWA\CommandeBundle\sql\TROISWASql

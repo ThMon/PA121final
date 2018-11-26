@@ -1,0 +1,19 @@
+{
+  "name": "ShareCode",
+  "homepage": "http://ivangabriele.github.io/ShareCode/",
+  "authors": [
+    "Ivan Gabriele <ivan.gabriele@gmail.com>"
+  ],
+  "description": "ShareCode provides a ready-to-use live code sharing tool written in PHP & JS without the need of any specific installation or database.",
+  "main": "",
+  "moduleType": [
+    "globals"
+  ],
+  "license": "MIT",
+  "private": true,
+  "dependencies": {
+    "jquery": "~2.1.4",
+    "css-reset": "~2.5.1",
+    "codemirror": "~5.10.0"
+  }
+}

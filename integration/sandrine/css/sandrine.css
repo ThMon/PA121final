@@ -1,0 +1,400 @@
+/*
+font-family: 'Slabo 27px', serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Montserrat', sans-serif;
+*/
+
+::selection{
+  background-color: hotpink;
+  color: white;
+}
+
+*{
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 100%;
+}
+body{
+  margin: 0;
+  font-family: 'Open Sans', sans-serif;
+  line-height: 1.5;
+  padding-top: 64px;
+  color: #333;
+  background-color: #f7f7f7;
+}
+
+ul{
+  padding: 0;
+}
+
+img, video, iframe{
+  max-width: 100%;
+  height: auto;
+}
+
+.container{
+  width: 96%;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1100px;
+}
+
+/*****************/
+header{
+  background-image: url(../img/phare.jpg);
+  background-size: cover;
+  background-position: center center;
+  padding: 13% 20px 13%;
+  font-family: 'Nunito', sans-serif;
+  text-align: center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  width: 100vw;
+}
+
+header nav{
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+}
+
+
+header nav a{
+  color: #ddd;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+.toggle-menu{
+  position: fixed;
+  right: 2px;
+  top: 2px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  color: rgba(0, 0, 0, 0.7);
+  border: 0;
+  display: none;
+  width: 35px;
+  height: 35px;
+  font-size: 1.5rem;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  display: none;
+  outline: none;
+}
+
+.site-title{
+  margin: 0 0 20px;
+  letter-spacing: 1px;
+  text-align: center;
+  text-transform: none;
+  color: rgba(44, 134, 147, 0.95);
+  color: rgba(255, 255, 255, 1);
+  font-size: 2.8rem;
+  /* text-shadow:
+   1px 1px 0px rgba(44, 134, 147, 0.95),
+   2px 2px 0px rgba(44, 134, 147, 0.95),
+   3px 3px 0px rgba(44, 134, 147, 0.95),
+   4px 4px 0px rgba(44, 134, 147, 0.95)
+   ; */
+   text-shadow:
+    1px 1px 0px rgba(0, 0, 0, 0.85),
+    2px 2px 0px rgba(0, 0, 0, 0.85),
+    3px 3px 0px rgba(0, 0, 0, 0.85),
+    4px 4px 0px rgba(0, 0, 0, 0.85)
+    ;
+}
+.baseline{
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: white;
+  text-shadow:
+   1px 1px 0px rgba(0, 0, 0, 0.85)
+
+   ;
+}
+
+.cta{
+  text-transform: uppercase;
+  padding: 1em;
+
+  /* background-color: rgba(44, 134, 147, 0.95); */
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0.95) 0%,
+    rgba(255, 255, 255, 0.95) 100%
+    );
+    background-repeat: no-repeat;
+  background-size: 0% 100%;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 3px;
+  display: inline-flex;
+  align-items: center;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin: 10% 0;
+  transition: all 0.3s ease;
+  border: 2px solid rgba(255, 255, 255, 1);
+
+/*  background-color: rgba(0, 132, 137, 0.65);*/
+  /*text-shadow:
+   1px 1px 0px rgba(0, 0, 0, 0.85),
+   2px 2px 0px rgba(0, 0, 0, 0.85)
+   ;*/
+}
+.cta:after{
+
+}
+.cta:hover{
+  background-size: 100% 100%;
+  color: #444;
+}
+.cta i{
+  margin-left: 10px;
+}
+
+/*****************************/
+
+.section-home{
+  margin-bottom: 60px;
+  padding: 60px 0;
+  background-color: rgba(189, 208, 208, 0.6);
+}
+
+.intro{
+  /* background-image: url(../img/plougoulin.jpg); */
+  background-size: cover;
+  background-position: center bottom;
+  background-color: transparent;
+
+}
+
+.gites{
+
+}
+.commodites{
+  background-color: transparent;
+}
+
+.dispos{
+  background-color: transparent;
+}
+
+.contact{
+
+}
+
+.section-home h2{
+  text-align: center;
+  font-family: 'Nunito', sans-serif;
+  font-size: 2.3rem;
+  padding-bottom: 20px;
+  margin-top: 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.gites-inner{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.gites-inner article{
+  width: 31%;
+  display: flex;
+  flex-direction: column;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: justify;
+  background-color: #f7f7f7;
+}
+.gites-inner article img{
+  border: 5px solid rgba(0, 0, 0, 0.15);
+}
+.gites-inner article h3{
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.more{
+  border: 2px solid #444;
+  padding: 1em;
+  margin-top: 15px;
+  color: #444;
+  text-decoration: none;
+  font-weight: bold;
+  align-self: flex-end;
+  margin-top: auto;
+  background: linear-gradient(
+    90deg,
+    #444 0%,
+    #444 100%
+    );
+    background-repeat: no-repeat;
+  background-size: 0% 100%;
+  transition: all 0.3s ease;
+
+}
+.more:hover{
+  background-size: 100% 100%;
+  color: rgba(189, 208, 208, 1);
+}
+
+.more i{
+  margin-left: 5px;
+}
+
+.commodites-inner{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.commodites-inner h2{
+  width: 100%;
+}
+
+.commodites-inner article{
+  width: 23%;
+  /* background-color: rgba(189, 208, 208, 0.6); */
+  margin-bottom: 30px;
+  padding: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.commodites-inner h3{
+  margin-top: 0;
+  background-color: orangered;
+  margin-top: -20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  padding: 10px;
+  color: white;
+
+}
+
+.see-all-activities-wrapper{
+  margin-top: 60px;
+  display: flex;
+  justify-content: center;
+}
+
+.situation iframe{
+  width: 100%;
+  min-height: 500px;
+  border: 5px solid rgba(0, 0, 0, 0.3);
+}
+
+.testimony-inner{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.testimony-inner h2{
+  width: 100%;
+
+}
+
+.testimony-inner article{
+  width: 23%;
+  text-align: center;
+}
+
+.testimony-inner img{
+  width: 60%;
+  border-radius: 50%;
+
+}
+.testimony-inner h3{
+  font-size: 1rem;
+
+}
+
+.testimony-inner blockquote{
+  font-style: italic;
+  font-size: 0.9rem;
+  margin: 5px 0 0 0;
+}
+
+blockquote::before, blockquote::after{
+  content: ' " ';
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+
+@media screen and (max-width: 767px){
+
+  body{
+    padding-top: 0;
+  }
+
+  .toggle-menu{
+    display: block;
+  }
+
+  header nav{
+      background-color: rgba(0, 0, 0, 0.85);
+      padding: 20px;
+      flex-direction: column;
+      /* align-items: center; */
+      position: fixed;
+      top: 0;
+      left: auto;
+      right: -100%;
+      width: 100%;
+      transition: all 400ms ease;
+  }
+
+  header nav a{
+    margin: 10px 0;
+  }
+
+  .site-title{
+    font-size: 2rem;
+  }
+  .site-baseline{
+
+  }
+  .cta{
+    font-size: 1rem;
+  }
+  .nav-is-showing .nav-main{
+    right: 0;
+  }
+
+  .nav-is-showing .toggle-menu{
+    background-color: transparent;
+    color: rgba(255, 255, 255, 0.7);
+  }
+
+
+  .gites-inner article{
+    width: 100%;
+    margin-bottom: 30px;
+  }
+
+  .commodites-inner article {
+    width: 48%;
+  }
+
+
+  .testimony-inner article{
+    width: 48%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+
+
+
+}
